@@ -28,25 +28,6 @@ This tool empowers businesses to gain deeper customer insights and personalize t
   - `rfm_scaler.pkl`
   - `rfm_kmeans_model.pkl`
 
----
-
-## 📁 Project Structure
-
-ShopperSpectrum/
-│
-├── model/
-│ ├── svd_recommender.pkl
-│ ├── rfm_scaler.pkl
-│ └── rfm_kmeans_model.pkl
-│
-├── data/
-│ └── cleaned_sales_data.csv
-│
-├── recommend.py # Streamlit web app
-├── requirements.txt
-├── README.md
-└── .gitignore
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the Repository
@@ -97,5 +78,6 @@ Link your GitHub repo and set recommend.py as the entry point.
 
 Author
 Amit Panchal
-📧 LinkedIn Profile
+📧 LinkedIn Profile : [text](https://www.linkedin.com/in/amit-panchal0319/)
+
 
