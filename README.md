@@ -76,8 +76,7 @@ cleaned_sales_data.csv
 
 Link your GitHub repo and set recommend.py as the entry point.
 
-Author
-Amit Panchal
-📧 LinkedIn Profile : https://www.linkedin.com/in/amit-panchal0319/
+**Amit Panchal**  
+[📧 LinkedIn Profile](https://www.linkedin.com/in/amit-panchal0319/)
 
 
