@@ -78,6 +78,6 @@ Link your GitHub repo and set recommend.py as the entry point.
 
 Author
 Amit Panchal
-📧 LinkedIn Profile : [text](https://www.linkedin.com/in/amit-panchal0319/)
+📧 LinkedIn Profile : https://www.linkedin.com/in/amit-panchal0319/
 
 
