@@ -1,82 +1,104 @@
-# 🛒 Shopper Spectrum – Customer Segmentation & Product Recommendation System
+🛒 Shopper Spectrum – Customer Segmentation & Product Recommendation System
+Welcome to Shopper Spectrum, a powerful and intuitive web application built with Streamlit that performs Customer Segmentation using RFM (Recency, Frequency, Monetary) analysis and provides Product Recommendations using Collaborative Filtering (SVD).
 
-Welcome to **Shopper Spectrum**, an intelligent Streamlit-based web app designed to segment customers using RFM (Recency, Frequency, Monetary) analysis and recommend products using collaborative filtering.
+This tool helps businesses understand customer behavior, optimize marketing strategies, and enhance user experience through personalized product suggestions.
 
-This tool empowers businesses to gain deeper customer insights and personalize their marketing and sales strategies.
+🧠 Problem Statement
+The global e-commerce industry produces enormous transaction datasets daily, which, when analyzed, can unlock meaningful patterns in consumer behavior. This project focuses on:
 
----
+Segmenting customers based on RFM analysis
 
-## 🚀 Features
+Applying KMeans clustering to identify distinct customer groups
 
-✅ **Customer Segmentation**  
-- RFM-based customer profiling  
-- KMeans clustering for segmentation  
-- Scaled clustering model saved via `pickle`
+Implementing a recommendation system using Singular Value Decomposition (SVD) to suggest products based on past purchases
 
-✅ **Product Recommendation**  
-- Collaborative filtering using SVD  
-- Recommends personalized products based on past purchase behavior
+🚀 Features
+✅ Customer Segmentation
+RFM (Recency, Frequency, Monetary) based profiling
 
-✅ **Interactive Dashboard**  
-- Streamlit-powered UI  
-- Dropdown filters for user selection  
-- Visualization of clusters and key metrics
+Scaled data using MinMaxScaler
 
-✅ **Model Pipelines**  
-- Models are pre-trained and stored as `.pkl` files:
-  - `svd_recommender.pkl`
-  - `rfm_scaler.pkl`
-  - `rfm_kmeans_model.pkl`
+KMeans clustering for identifying customer segments
 
-## 🛠️ Getting Started
+Pre-trained model loaded from rfm_kmeans_model.pkl
 
-### 1. Clone the Repository
+✅ Product Recommendation
+Personalized recommendations using Collaborative Filtering (SVD)
 
-```bash
-git clone 
-cd ShopperSpectrum
-2. Install Dependencies
+Learns from past purchase behavior to recommend top N products
+
+Model loaded from svd_recommender.pkl
+
+✅ Interactive Streamlit Dashboard
+Clean and modern UI
+
+Dropdown filters for selecting customer or product
+
+Real-time product recommendations
+
+Cluster visualization and summary stats
+
+✅ Efficient Model Pipelines
+Pre-trained models are saved as .pkl files and loaded at runtime to improve performance:
+
+Copy
+Edit
+📦 models/
+├── rfm_scaler.pkl
+├── rfm_kmeans_model.pkl
+└── svd_recommender.pkl
+📊 Visualizations
+The dashboard includes:
+
+📈 Cluster Distribution (Pie/Bar charts)
+
+📊 RFM Score Analysis
+
+🧮 Segment Summary Tables
+
+🧠 Product Recommendation Preview
+
+🛠️ Tech Stack
+Frontend/UI: Streamlit
+
+Data Analysis: Pandas, NumPy
+
+Modeling: Scikit-learn, Surprise (SVD), Joblib/Pickle
+
+Visualization: Matplotlib, Seaborn, Plotly
+
+📁 Project Structure
+bash
+Copy
+Edit
+├── recommend.py                # Streamlit main app
+├── cleaned_sales_data.csv      # Cleaned transaction data
+├── models/
+│   ├── rfm_scaler.pkl
+│   ├── rfm_kmeans_model.pkl
+│   └── svd_recommender.pkl
+├── requirements.txt            # Python dependencies
+└── README.md
+▶️ Getting Started
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/amitpanchal319/Shoppers_Specturm.git
+cd shopper-spectrum
+Install dependencies
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-3. Run the App
+Run the Streamlit app
 
+bash
+Copy
+Edit
 streamlit run recommend.py
-📊 Tech Stack
-Python
-
-Pandas, NumPy, Scikit-learn
-
-Streamlit
-
-Pickle (for model serialization)
-
-Matplotlib, Seaborn (for visualizations)
-
-📸 Sample Visuals
-(Add your app screenshots here if available)
-Example:
-
-Customer segments by cluster
-
-Top recommendations per user
-
-Sales trends and metrics
-
-📦 Model Files
-Make sure the following .pkl files are placed in the model/ directory:
-
-rfm_kmeans_model.pkl
-
-rfm_scaler.pkl
-
-svd_recommender.pkl
-
-And the cleaned data file is present in the data/ directory as:
-
-cleaned_sales_data.csv
-
-Link your GitHub repo and set recommend.py as the entry point.
-
-**Amit Panchal**  
-[📧 LinkedIn Profile](https://www.linkedin.com/in/amit-panchal0319/)
-
-
+🤝 Connect With Me
+Amit Panchal
+🔗 📧 LinkedIn Profile
