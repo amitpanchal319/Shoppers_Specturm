@@ -1,9 +1,9 @@
-🛒 Shopper Spectrum – Customer Segmentation & Product Recommendation System
+# 🛒 Shopper Spectrum – Customer Segmentation & Product Recommendation System
 Welcome to Shopper Spectrum, a powerful and intuitive web application built with Streamlit that performs Customer Segmentation using RFM (Recency, Frequency, Monetary) analysis and provides Product Recommendations using Collaborative Filtering (SVD).
 
 This tool helps businesses understand customer behavior, optimize marketing strategies, and enhance user experience through personalized product suggestions.
 
-🧠 Problem Statement
+# 🧠 Problem Statement
 The global e-commerce industry produces enormous transaction datasets daily, which, when analyzed, can unlock meaningful patterns in consumer behavior. This project focuses on:
 
 Segmenting customers based on RFM analysis
@@ -12,7 +12,7 @@ Applying KMeans clustering to identify distinct customer groups
 
 Implementing a recommendation system using Singular Value Decomposition (SVD) to suggest products based on past purchases
 
-🚀 Features
+# 🚀 Features
 ✅ Customer Segmentation
 RFM (Recency, Frequency, Monetary) based profiling
 
@@ -41,8 +41,7 @@ Cluster visualization and summary stats
 ✅ Efficient Model Pipelines
 Pre-trained models are saved as .pkl files and loaded at runtime to improve performance:
 
-Copy
-Edit
+
 📦 models/
 ├── rfm_scaler.pkl
 ├── rfm_kmeans_model.pkl
@@ -67,38 +66,5 @@ Modeling: Scikit-learn, Surprise (SVD), Joblib/Pickle
 
 Visualization: Matplotlib, Seaborn, Plotly
 
-📁 Project Structure
-bash
-Copy
-Edit
-├── recommend.py                # Streamlit main app
-├── cleaned_sales_data.csv      # Cleaned transaction data
-├── models/
-│   ├── rfm_scaler.pkl
-│   ├── rfm_kmeans_model.pkl
-│   └── svd_recommender.pkl
-├── requirements.txt            # Python dependencies
-└── README.md
-▶️ Getting Started
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/amitpanchal319/Shoppers_Specturm.git
-cd shopper-spectrum
-Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Streamlit app
-
-bash
-Copy
-Edit
-streamlit run recommend.py
-🤝 Connect With Me
 Amit Panchal
-🔗 📧 LinkedIn Profile
+🔗 LinkedIn Profile
